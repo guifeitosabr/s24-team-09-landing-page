@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Website built by Guilherme Feitosa.</copyright>
-    <lastBuildDate>Tue, 14 May 2024 13:35:24 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2024 13:39:13 -0400</lastBuildDate>
     <atom:link href="https://guifeitosabr.github.io/s24-team-09-landing-page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo v0.119.0</title>
@@ -105,7 +105,7 @@
       <link>https://guifeitosabr.github.io/s24-team-09-landing-page/page/who-built-the-extension/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/page/who-built-the-extension/</guid>
-      <description>Who Built this Extension? FocusTabs was built as part of the curriculum for University of Pennsylvania&amp;rsquo;s CIS3500 class (&amp;ldquo;Software Design &amp;amp; Engineering&amp;rdquo;), instructed by Professor Jérémie O. Lumbroso, during the 2024 spring semester.&#xA;Team FocusTabs was built by Anirudh Bharadwaj (BSE, Computer Science), Eshan Singhal (BASc, Physics &amp;amp; BE, Computer Engineering), Guilherme Feitosa (BA, Economics), and Kofi Addae-Sakyi – all undergraduate students at the University of Pennsylvania.&#xA;Acknowledgements We would like to thank Professor Jérémie O.</description>
+      <description>Who Built the Extension? FocusTabs was built as part of the curriculum for University of Pennsylvania&amp;rsquo;s CIS3500 class (&amp;ldquo;Software Design &amp;amp; Engineering&amp;rdquo;), instructed by Professor Jérémie O. Lumbroso, during the 2024 spring semester.&#xA;Team FocusTabs was built by Anirudh Bharadwaj (BSE, Computer Science), Eshan Singhal (BASc, Physics &amp;amp; BE, Computer Engineering), Guilherme Feitosa (BA, Economics), and Kofi Addae-Sakyi – all undergraduate students at the University of Pennsylvania.&#xA;Acknowledgements We would like to thank Professor Jérémie O.</description>
     </item>
   </channel>
 </rss>
