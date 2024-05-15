@@ -1,5 +1,5 @@
 ---
-title: "How Was The Process Of Building the Extension?"
+title: "How Was The Process of Building the Extension?"
 description: "Development process, decisions made, mistakes encountered, and most importantly, the lessons learned while building FocusTabs."
 url: "/page/how-did-you-build-the-extension/"
 draft: false
