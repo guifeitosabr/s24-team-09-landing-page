@@ -38,4 +38,4 @@ All logs are discarded in every release.
 
 [Contact us](https://focus-tabs.com/contact/) if you have any questions.
 
-Effective Date: *15th May 2022*
+Effective Date: *14th May 2024*
