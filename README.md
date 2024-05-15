@@ -1,10 +1,10 @@
-# [FocusTabs' Landing Page](https://focus-tabs.com/)
+# FocusTabs' Landing Page
 
 ## Demo
 Visit the [repository](https://github.com/guifeitosabr/s24-team-09-landing-page) for source code and project management.
 
 ## Description
-The landing page was built to promote "FocusTabs," a Chrome extension that allows users to group their tabs—either manually or automatically—and hence increase their productivity online. It uses the [hugo-bootstrap-theme](https://github.com/filipecarneiro/hugo-bootstrap-theme) by Filipe Carneiro as a template.
+The landing page was built to promote [FocusTabs](https://focus-tabs.com/), a Chrome extension that allows users to group their tabs—either manually or automatically—and hence increase their productivity online. It uses the [hugo-bootstrap-theme](https://github.com/filipecarneiro/hugo-bootstrap-theme) by Filipe Carneiro as a template.
 
 ## Visuals
 Below are images of the landing page:
