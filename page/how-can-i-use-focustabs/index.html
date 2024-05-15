@@ -34,7 +34,7 @@
   <meta property="article:section" content="page" />
   
   
-    <meta property="article:modified_time" content="2024-05-14T13:35:24-04:00" />
+    <meta property="article:modified_time" content="2024-05-14T23:19:04-04:00" />
   
 
 
@@ -63,15 +63,15 @@
   "@type": "Article",
   "headline": "How Can I Use FocusTabs?",
   "datePublished": "0001-01-01T00:00:00+00:00",
-  "dateModified": "2024-05-14T13:35:24-04:00",
+  "dateModified": "2024-05-14T23:19:04-04:00",
   "mainEntityOfPage": "https://focus-tabs.com/",
   "publisher": {
     "@type": "Organization",
     "name": "FocusTabs"
   },
-  "wordcount" :  265 ,
+  "wordcount" :  112 ,
   "description": "Step-by-step about how to best use our extension to organize your Chrome tabs and increase your productivity online.",
-  "keywords": ["security best practices","external links","does not use https","links to cross-origin destinations are unsafe","includes front-end JavaScript libraries with known security vulnerabilities","ensure CSP is effective against XSS attacks","Content Security Policy","csp"]
+  "keywords": ["installation","install from release","download","zip file","developer mode","install from source","repository","dependencies"]
 }
 </script>
 
@@ -127,40 +127,41 @@
         
 
 <div class="container py-3">
-  <h1 id="security-best-practices">Security Best Practices</h1>
-<p>Improve code health of your web page following these best practices.</p>
-<h2 id="use-https">Use HTTPS</h2>
-<p>All websites should be protected with HTTPS, even ones that don&rsquo;t handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your site and your users.</p>
-<h2 id="external-links">External Links</h2>
-<p>When you link to a page on another site using the target=&quot;_blank&quot; attribute, you can expose your site to performance and security issues:</p>
+  <h1 id="how-can-i-use-focustabs">How Can I Use FocusTabs?</h1>
+<p>By following the steps below, you will not get lost in a sea of tabs anymore. From now on, you will always find your flow.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="install-from-release">Install From Release</h3>
+<ol>
+<li>Download the latest release from the <a href="https://github.com/guifeitosabr/s24-team-09/releases" target="_blank" rel="noopener">Releases</a></li>
+<li>Unzip the downloaded ZIP file</li>
+<li>Open Chrome and navigate to <code>chrome://extensions</code></li>
+<li>Enable &ldquo;Developer mode&rdquo;</li>
+<li>Drag and drop the unzipped folder into the extensions page</li>
+</ol>
+<h3 id="install-from-source">Install From Source</h3>
+<ol>
+<li>
+<p>Clone the repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/jlumbroso/chrome-extension-text-collector
+</span></span></code></pre></div></li>
+<li>
+<p>Install dependencies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd chrome-extension-text-collector
+</span></span><span style="display:flex;"><span>npm install
+</span></span></code></pre></div></li>
+<li>
+<p>Build the extension:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run build
+</span></span></code></pre></div></li>
+<li>
+<p>Load the extension in Chrome:</p>
 <ul>
-<li>
-<p>The other page may run on the same process as your page. If the other page is running a lot of JavaScript, your page&rsquo;s performance may suffer.</p>
-</li>
-<li>
-<p>The other page can access your window object with the window.opener property. This may allow the other page to redirect your page to a malicious URL.</p>
-</li>
+<li>Open Chrome and navigate to <code>chrome://extensions</code></li>
+<li>Enable &ldquo;Developer mode&rdquo;</li>
+<li>Click &ldquo;Load unpacked&rdquo; and select the <code>dist</code> directory from this project directory.</li>
 </ul>
-<p>Adding <code>rel=&quot;noopener&quot;</code> or <code>rel=&quot;noreferrer&quot;</code> to your <code>target=&quot;_blank&quot;</code> links avoids these issues.</p>
-<hr>
-<p>All external links will have <code>target=&quot;_blank&quot;</code> and <code>rel=“noopener nofollow”</code> attribute.</p>
-<ul>
-<li>
-<p><a href="https://salvus.site" target="_blank" rel="noopener">Salvus.Site</a></p>
 </li>
-<li>
-<p><a href="https://discourse.gohugo.io/t/render-link-html-help-need/30006/3" target="_blank" rel="noopener">Render-link.html help need</a></p>
-</li>
-</ul>
-<p>Internal link:</p>
-<ul>
-<li><a href="/blog/">Blog</a></li>
-</ul>
-<h2 id="checks-your-javascript-libraries-for-security-vulnerabilities">Checks your JavaScript libraries for security vulnerabilities</h2>
-<p>Intruders have automated web crawlers that can scan your site for known security vulnerabilities. When the web crawler detects a vulnerability, it alerts the intruder. From there, the intruder just needs to figure out how to exploit the vulnerability on your site.</p>
-<p>To detect vulnerable libraries check <a href="https://snyk.io/vuln?packageManager=all" target="_blank" rel="noopener">snyk&rsquo;s Vulnerability DB</a>.</p>
-<h2 id="configure-content-security-policy-csp">Configure Content Security Policy (CSP)</h2>
-<p>A Content Security Policy (CSP) helps to ensure any content loaded in the page is trusted by the site owner. CSPs mitigate cross-site scripting (XSS) attacks because they can block unsafe scripts injected by attackers. However, the CSP can easily be bypassed if it is not strict enough.</p>
+</ol>
 
 </div>
 
