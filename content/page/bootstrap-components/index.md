@@ -8,236 +8,44 @@ images: ["bootstrap-v5-new-logo.png","hugo-bootstrap-banner.png"]
 keywords: ["bootstrap components","bootstrap","hugo bootstrap theme"]
 ---
 
-# Bootstrap Components
+# How Did You Build the Extension?
 
-Bootstrap is bundled with tens of components that can be reused to provide a good user experience and user interactions in a web page.
+Developing FocusTabs has been an enlightening journey filled with challenges, decisions, and ultimately, valuable lessons. In this post-mortem analysis, we'll delve into the process, decisions made, mistakes encountered, and most importantly, the lessons learned throughout the development of the project.
 
----
+## Decisions and Mistakes
 
-## Accordion
+### 1. Underestimating API Integration Complexity
 
-<br>
+One of our early mistakes was underestimating the complexity of integrating multiple APIs, especially the OpenAI API for automated tab grouping suggestions. Our initial timeline did not adequately account for the time required to understand, experiment with, and troubleshoot API integrations. This led to delays in implementing crucial functionality and necessitated adjustments to our timeline. For instance, we had to deal with collecting the user’s API key as we could not use a global API key for all consumers. To account for this, if an API key was not stored in the application, we prompt the user to enter one they have created from the Open AI website. However, we ran into some issues storing this on the device and being able to then use the API key for calls to GPT to obtain tab grouping recommendations. Additionally, we encountered issues with obtaining accurate grouping answers from the GPT as sometimes the answers were null or completely inaccurate. Our solution to this issue came primarily from adapting the prompt message to address certain edge cases and ensure GPT completely understood the task. We also tested entering different types of information about the websites into GPT and discovered the website titles were the most information while not overloading too much unnecessary information.
 
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
+### 2. Feature Overload
 
-<br>
+In our enthusiasm to cater to diverse user needs, we initially planned an extensive feature set. However, as development progressed, we realized the danger of feature overload. Some features, while innovative, detracted from the core functionality of tab grouping and added unnecessary complexity. Deciding to streamline our feature set was a tough but necessary decision to ensure a focused and user-centric product. For instance, we initially planned on storing user login information for websites that required it so that the user was automatically logged into the website when a tab group was opened thereby streamlining the user experience. However, after implementing the core functionality and the automated tab grouping suggestions using the OpenAI API, including this feature was too much to handle and thereby could not be developed. Another feature we planned to add, but later scrapped was the use of tab analytics to figure out tabs that users frequently spent time on or tabs that were often open in conjunction as part of the suggested tab group feature. However, we decided to just confine these suggestions to encompass tabs that the user had already added to some group before (and thus thought of as important), as this was far more feasible to implement, and would not result in the installation crashing or running extremely slowly if the user had many tabs (say 50-60) open at once. 
 
-See [Accordion documentation](https://getbootstrap.com/docs/5.3/components/accordion/).
+### 3. UI/UX Trade-offs
 
----
+Balancing functionality with a clean and intuitive user interface proved challenging at times. We had to make difficult decisions regarding UI/UX trade-offs, especially when accommodating diverse user preferences and device constraints. Striking the right balance between feature richness and simplicity required constant iteration and feedback gathering, but ultimately led to a more user-friendly experience. The final UI was extremely clean and showed the user the currently available tab groups, with an X to remove groups that are no longer needed, a button to manually add a tab group, and a button to automatically group tabs with AI. To manually create tab groups, after much deliberation, we decided to let the user enter the name of the group and then simply click on the tabs they wanted to include in the group from the list of all available tabs. This allowed the user to easily add/remove tabs from the group. The AI suggestion component was extremely simple as it prompted the user to enter their Open AI API key if one was not stored and then simply presented a suggested tab grouping which they could implement by clicking a button. Finally, at all stages, the user could cancel an ongoing operation. This setup strikes the perfect balance between simple, easy-to-understand UI with complex functionality and complete user control.
 
-## Alert
+## Lessons Learned
 
-<br>
+### 1. Innovation and Pivoting
 
-<div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
-</div>
-<div class="alert alert-secondary" role="alert">
-  A simple secondary alert—check it out!
-</div>
-<div class="alert alert-success" role="alert">
-  A simple success alert—check it out!
-</div>
-<div class="alert alert-danger" role="alert">
-  A simple danger alert—check it out!
-</div>
-<div class="alert alert-warning" role="alert">
-  A simple warning alert—check it out!
-</div>
-<div class="alert alert-info" role="alert">
-  A simple info alert—check it out!
-</div>
-<div class="alert alert-light" role="alert">
-  A simple light alert—check it out!
-</div>
-<div class="alert alert-dark" role="alert">
-  A simple dark alert—check it out!
-</div>
+The first and most important lesson we learned was innovation and pivoting. After going past the ideation phase, while planning on how to develop the extension, we realized that Google Chrome already had a tab grouping feature potentially making our extension redundant. We decided to stick with our idea but set out to make a tab grouper with superior UI that made it easier for the user to navigate. Our main edge over other tab grouping extensions is our automatic grouping feature that allows users to group tabs quickly with just a click of a button. This addition not only differentiated our extension but also aligned with our vision of enhancing productivity through intelligent solutions. We learned the importance of adaptability and creativity in navigating unforeseen challenges, ultimately leading to a more innovative and impactful product.
 
-<br>
+### 2. Flexibility in Feature Selection
 
-See [Alert documentation](https://getbootstrap.com/docs/5.3/components/alerts/).
+Our initial feature set was ambitious, aiming to cater to a wide array of user stories. However, as development progressed, we realized the need to prioritize essential features and streamline our focus. Some features, while intriguing, were not feasible within our timeframe or added unnecessary complexity. Specifically, we initially thought of having an analytics feature that allows users to examine your overall time spent on tabs. That feature would have been a separate project on its own and we decided to keep things simple. Learning to prioritize and be flexible with feature selection was crucial in delivering a functional and user-friendly extension.
 
----
+### 3. Embracing Failure as Learning
 
-## Badge
+Throughout the development process, we encountered setbacks, bugs, and unforeseen challenges. However, instead of viewing these as failures, we embraced them as opportunities for learning and growth. Each bug fixed, and each challenge overcome, contributed to our collective knowledge, and strengthened our resolve to deliver a polished product. Here’s a brief overview of some of the more general issues we faced (we also outlined some more specific issues in : 
 
-<br>
+The limitations of a Chrome extension were initially a large issue. For the background.js script, we had originally referenced some other scripts that utilized 3rd party libraries (OpenAI, Cheerio, Axios, etc.) but we realized that we would not be able to use these as imports in our extension, which necessitated changing a lot of our initial ideas. For example, when figuring out what information for each tab to provide to the OpenAI API as context for determining what tab groups to create, we initially thought to provide content from the tabs themselves, though we later had to reduce this to just information from the tab’s title, as this was all the information we could access without requesting Axios. 
 
-<p>Text with badge <span class="badge bg-primary">New</span></p>
+We also ran into many issues regarding the formatting of function output. Since we had many functions that relied on each other, including many that were asynchronous, much of our debugging was realizing that we had to return a subset of the original output when passing it to another function or resolve the output so that we weren’t passing in a Promise as the input. However, as we became more familiar with the syntax, we became far more comfortable with avoiding these types of issues. 
 
-<br>
+Finally, an issue we faced was understanding how to interface with the extension when downloaded. We primarily relied on print statements to debug, and thus needed to figure out how to parse the Chrome development tools to figure out where these were displayed (in particular, figuring out where our frontend typescript file’s print statements were sent to required quite a bit of effort before we landed on right-clicking on the extension pop-up).
 
-<button type="button" class="btn btn-primary">
-  Button <span class="badge text-bg-secondary">4</span>
-</button>
+## Conclusion
 
-<br>
-<br>
-
-<button type="button" class="btn btn-primary position-relative">
-  Positioned
-  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-</button>
-
-<br>
-<br>
-
-<button type="button" class="btn btn-primary position-relative">
-  Profile
-  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-    <span class="visually-hidden">New alerts</span>
-  </span>
-</button>
-
-<br>
-<br>
-
-<span class="badge rounded-pill text-bg-success">Rounded pill</span>
-
-<br>
-
-See [Badge documentation](https://getbootstrap.com/docs/5.3/components/badge/).
-
----
-
-## Button
-
-<br>
-
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-
-<button type="button" class="btn btn-link">Link</button>
-
-<br>
-
-See [Button documentation](https://getbootstrap.com/docs/5.3/components/buttons/).
-
----
-
-## Card
-
-<br>
-
-<div class="card w-50">
-  <img src="picsum-photo-300x200.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#card" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<br>
-
-See [Card documentation](https://getbootstrap.com/docs/5.3/components/card/).
-
----
-
-## List group
-
-<br>
-
-<ul class="list-group">
-  <li class="list-group-item">An item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
-
-<br>
-
-See [List group documentation](https://getbootstrap.com/docs/5.3/components/list-group/).
-
----
-
-### Creating your own
-
-Read the [customize components page](https://getbootstrap.com/docs/5.3/customize/components/) to learn how build your own components.
-
----
-
-## Callout
-
-<br>
-
-<div class="callout">
-    <strong>This is a callout.</strong> We built it custom for our docs so our messages to you stand out. It has three variants via modifier classes.
-</div>
-
-<div class="callout callout-info">
-    <strong>This is an info callout.</strong> Example text to show it in action.
-</div>
-
-<div class="callout callout-warning">
-    <strong>This is a warning callout.</strong> Example text to show it in action.
-</div>
-
-<div class="callout callout-danger">
-    <strong>This is a danger callout.</strong> Example text to show it in action.
-</div>
-
-<br>
-
----
-
-## Tooltip
-
-<br>
-
-<div class="tooltip">
-  <p class="">
-  Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-placement="bottom" data-bs-title="The last tip!">your own</a> site or project.
-  </p>
-</div>
-
-<br>
+The journey of developing FocusTabs has been both rewarding and enlightening. From understanding user needs to embracing failure as learning, every step taught us valuable lessons that will undoubtedly shape our future endeavors. While there were challenges and mistakes along the way, the collective effort of our team and our commitment to delivering a high-quality product prevailed. As we reflect on this journey, we look forward to applying these lessons in future projects and continuing to innovate in the realm of productivity-enhancing tools.

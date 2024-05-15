@@ -4,7 +4,7 @@ description: "Step-by-step about how to best use our extension to organize your 
 url: "/page/how-can-i-use-focustabs/"
 draft: false
 tags: ["Featured"]
-keywords: ["security best practices","external links","does not use https","links to cross-origin destinations are unsafe","includes front-end JavaScript libraries with known security vulnerabilities","ensure CSP is effective against XSS attacks","Content Security Policy","csp"]
+keywords: ["installation","install from release","download","zip file","developer mode","install from source","repository","dependencies"]
 ---
 
 # How Can I Use FocusTabs?
