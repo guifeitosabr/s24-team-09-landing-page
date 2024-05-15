@@ -11,9 +11,9 @@ keywords: ["installation","install from release","download","zip file","develope
 
 By following the steps below, you will not get lost in a sea of tabs anymore. From now on, you will always find your flow.
 
-## Installation
+### Installation
 
-### Install From Release
+#### Install From Release
 
 1. Download the latest release from the [Releases](https://github.com/guifeitosabr/s24-team-09/releases)
 2. Unzip the downloaded ZIP file
@@ -21,7 +21,7 @@ By following the steps below, you will not get lost in a sea of tabs anymore. Fr
 4. Enable "Developer mode"
 5. Drag and drop the unzipped folder into the extensions page
 
-### Install From Source
+#### Install From Source
 
 1. Clone the repository:
 
