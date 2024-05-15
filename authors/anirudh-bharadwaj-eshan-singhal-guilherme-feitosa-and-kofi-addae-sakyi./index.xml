@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anirudh Bharadwaj, Eshan Singhal, Guilherme Feitosa, and Kofi Addae-Sakyi. on FocusTabs</title>
-    <link>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/anirudh-bharadwaj-eshan-singhal-guilherme-feitosa-and-kofi-addae-sakyi./</link>
+    <link>https://focus-tabs.com/authors/anirudh-bharadwaj-eshan-singhal-guilherme-feitosa-and-kofi-addae-sakyi./</link>
     <description>Recent content in Anirudh Bharadwaj, Eshan Singhal, Guilherme Feitosa, and Kofi Addae-Sakyi. on FocusTabs</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Website built by Guilherme Feitosa.</copyright>
-    <atom:link href="https://guifeitosabr.github.io/s24-team-09-landing-page/authors/anirudh-bharadwaj-eshan-singhal-guilherme-feitosa-and-kofi-addae-sakyi./index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://focus-tabs.com/authors/anirudh-bharadwaj-eshan-singhal-guilherme-feitosa-and-kofi-addae-sakyi./index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docs</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/page/</link>
+      <link>https://focus-tabs.com/page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/page/</guid>
+      <guid>https://focus-tabs.com/page/</guid>
       <description></description>
     </item>
   </channel>

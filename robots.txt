@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: /404.html
-Sitemap: https://guifeitosabr.github.io/s24-team-09-landing-page/sitemap.xml
+Sitemap: https://focus-tabs.com/sitemap.xml

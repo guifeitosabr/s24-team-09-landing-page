@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on FocusTabs</title>
-    <link>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/</link>
+    <link>https://focus-tabs.com/authors/</link>
     <description>Recent content in Authors on FocusTabs</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Website built by Guilherme Feitosa.</copyright>
     <lastBuildDate>Sun, 12 May 2024 19:54:54 -0400</lastBuildDate>
-    <atom:link href="https://guifeitosabr.github.io/s24-team-09-landing-page/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://focus-tabs.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bjørn Erik Pedersen</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/bj%C3%B8rn-erik-pedersen/</link>
+      <link>https://focus-tabs.com/authors/bj%C3%B8rn-erik-pedersen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/bj%C3%B8rn-erik-pedersen/</guid>
+      <guid>https://focus-tabs.com/authors/bj%C3%B8rn-erik-pedersen/</guid>
       <description></description>
     </item>
     <item>
       <title>Mark Otto</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/mark-otto/</link>
+      <link>https://focus-tabs.com/authors/mark-otto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/mark-otto/</guid>
+      <guid>https://focus-tabs.com/authors/mark-otto/</guid>
       <description></description>
     </item>
     <item>
       <title>Anirudh Bharadwaj, Eshan Singhal, Guilherme Feitosa, and Kofi Addae-Sakyi.</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/anirudh-bharadwaj-eshan-singhal-guilherme-feitosa-and-kofi-addae-sakyi./</link>
+      <link>https://focus-tabs.com/authors/anirudh-bharadwaj-eshan-singhal-guilherme-feitosa-and-kofi-addae-sakyi./</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/anirudh-bharadwaj-eshan-singhal-guilherme-feitosa-and-kofi-addae-sakyi./</guid>
+      <guid>https://focus-tabs.com/authors/anirudh-bharadwaj-eshan-singhal-guilherme-feitosa-and-kofi-addae-sakyi./</guid>
       <description></description>
     </item>
     <item>
       <title>Team 09 - University of Pennsylvania&#39;s CIS3500</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/filipe-carneiro/</link>
+      <link>https://focus-tabs.com/authors/filipe-carneiro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/authors/filipe-carneiro/</guid>
+      <guid>https://focus-tabs.com/authors/filipe-carneiro/</guid>
       <description>Anirudh Bharadwaj, Eshan Singhal, Guilherme Feitosa, and Kofi Addae-Sakyi.</description>
     </item>
   </channel>

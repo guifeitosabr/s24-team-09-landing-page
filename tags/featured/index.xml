@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Featured on FocusTabs</title>
-    <link>https://guifeitosabr.github.io/s24-team-09-landing-page/tags/featured/</link>
+    <link>https://focus-tabs.com/tags/featured/</link>
     <description>Recent content in Featured on FocusTabs</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Website built by Guilherme Feitosa.</copyright>
-    <atom:link href="https://guifeitosabr.github.io/s24-team-09-landing-page/tags/featured/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://focus-tabs.com/tags/featured/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Can I Use FocusTabs?</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/page/how-can-i-use-focustabs/</link>
+      <link>https://focus-tabs.com/page/how-can-i-use-focustabs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/page/how-can-i-use-focustabs/</guid>
+      <guid>https://focus-tabs.com/page/how-can-i-use-focustabs/</guid>
       <description>Security Best Practices Improve code health of your web page following these best practices.&#xA;Use HTTPS All websites should be protected with HTTPS, even ones that don&amp;rsquo;t handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your site and your users.&#xA;External Links When you link to a page on another site using the target=&amp;quot;_blank&amp;quot; attribute, you can expose your site to performance and security issues:</description>
     </item>
     <item>
       <title>How Did You Build the Extension?</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/page/how-did-you-build-the-extension/</link>
+      <link>https://focus-tabs.com/page/how-did-you-build-the-extension/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/page/how-did-you-build-the-extension/</guid>
+      <guid>https://focus-tabs.com/page/how-did-you-build-the-extension/</guid>
       <description>Bootstrap Components Bootstrap is bundled with tens of components that can be reused to provide a good user experience and user interactions in a web page.&#xA;Accordion See Accordion documentation.&#xA;Alert See Alert documentation.&#xA;Badge Rounded pill&#xA;See Badge documentation.&#xA;Button Primary Secondary Success Danger Warning Info Light Dark&#xA;Link&#xA;See Button documentation.&#xA;Card See Card documentation.&#xA;List group See List group documentation.&#xA;Creating your own Read the customize components page to learn how build your own components.</description>
     </item>
     <item>
       <title>What is Your Mission Statement?</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/page/what-is-your-mission-statement/</link>
+      <link>https://focus-tabs.com/page/what-is-your-mission-statement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/page/what-is-your-mission-statement/</guid>
+      <guid>https://focus-tabs.com/page/what-is-your-mission-statement/</guid>
       <description>What is Your Mission Statement? When you are working online, especially when trying to multitask, it is extremely easy to get lost in a sea of 30-40 tabs that leads you floundering. Indeed, cluttered tabs not only reduce your productivity but can also leave you more stressed and frustrated, as you struggle to keep track of everything. FocusTabs was built to address this issue, assisting the user with keeping track of all of the tabs needed to achieve each of their goals, and hence improving their overall virtual experience.</description>
     </item>
     <item>
       <title>Who Built the Extension?</title>
-      <link>https://guifeitosabr.github.io/s24-team-09-landing-page/page/who-built-the-extension/</link>
+      <link>https://focus-tabs.com/page/who-built-the-extension/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://guifeitosabr.github.io/s24-team-09-landing-page/page/who-built-the-extension/</guid>
+      <guid>https://focus-tabs.com/page/who-built-the-extension/</guid>
       <description>Who Built the Extension? FocusTabs was built as part of the curriculum for University of Pennsylvania&amp;rsquo;s CIS3500 class (&amp;ldquo;Software Design &amp;amp; Engineering&amp;rdquo;), instructed by Professor Jérémie O. Lumbroso, during the 2024 spring semester.&#xA;Team FocusTabs was built by Anirudh Bharadwaj (BSE, Computer Science), Eshan Singhal (BASc, Physics &amp;amp; BE, Computer Engineering), Guilherme Feitosa (BA, Economics), and Kofi Addae-Sakyi – all undergraduate students at the University of Pennsylvania.&#xA;Acknowledgements We would like to thank Professor Jérémie O.</description>
     </item>
   </channel>
