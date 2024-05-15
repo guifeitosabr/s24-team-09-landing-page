@@ -13,7 +13,7 @@ FocusTabs was built as part of the curriculum for University of Pennsylvania's C
 
 ### Team
 
-FocusTabs was built by Anirudh Bharadwaj (BSE, Computer Science), Eshan Singhal (BASc, Physics & BE, Computer Engineering), Guilherme Feitosa (BA, Economics), and Kofi Addae-Sakyi – all undergraduate students at the University of Pennsylvania.
+FocusTabs was built by Anirudh Bharadwaj, Eshan Singhal, Guilherme Feitosa, and Kofi Addae-Sakyi – all undergraduate students at the University of Pennsylvania.
 
 ### Acknowledgements
 
