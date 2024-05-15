@@ -9,8 +9,8 @@ The landing page was built to promote "FocusTabs," a Chrome extension that allow
 ## Visuals
 Below are images of the landing page:
 
-- ![Image 1 Description](focustabs-landing-page-1.png)
-- ![Image 2 Description](focustabs-landing-page-2.png)
+![Image 1 Description](focustabs-landing-page-1.png)
+![Image 2 Description](focustabs-landing-page-2.png)
 
 ## Requirements
 The tools used are cross-platform and should work on Windows, MacOS, and Linux. You will need the following tools downloaded and installed:
