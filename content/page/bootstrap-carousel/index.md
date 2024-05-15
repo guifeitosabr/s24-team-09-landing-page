@@ -1,22 +1,19 @@
 ---
-title: "Bootstrap Carousel 🎠"
-description: "Bootstrap is bundled with tens of components that can be reused to provide a good user experience and user interactions in a web page."
+title: "Who Built this Extension?"
+description: "The team behind FocusTabs and acknowledgements."
 draft: false
 tags: ["Featured"]
-images: ["bootstrap-v5-new-logo.png"]
-keywords: ["bootstrap carousel","bootstrap","hugo bootstrap theme"]
+keywords: ["university of pennsylvania","anirudh bharadwaj","eshan singhal","guilherme feitosa","kofi addae-sakyi","jérémie o. lumbroso","filipe carneiro"]
 ---
 
-# Bootstrap Carousel
+# Who Built this Extension?
 
-A slideshow component for cycling through elements—images or slides of text — like a carousel.
+FocusTabs was built as part of the curriculum for University of Pennsylvania's CIS3500 class ("Software Design & Engineering"), instructed by Professor [Jérémie O. Lumbroso](https://github.com/jlumbroso), during the 2024 spring semester.
 
-<br>
+### Team
 
-<div class="w-50 mx-auto">
-    {{< carousel imagesPattern="carousel/*.png" aspectRatio="3/2" crossFade=false withIndicators=true withControls=true >}}
-</div>
+FocusTabs was built by Anirudh Bharadwaj (BSE, Computer Science), Eshan Singhal (BASc, Physics & BE, Computer Engineering), Guilherme Feitosa (BA, Economics), and Kofi Addae-Sakyi – all undergraduate students at the University of Pennsylvania.
 
-<br>
+### Acknowledgements
 
-See [Carousel documentation](https://getbootstrap.com/docs/5.3/components/carousel/).
+We would like to thank Professor Jérémie O. Lumbroso for his fundamental mentorship all throughout the development of FocusTabs. Likewise, all four of us would like to extend our gratitude to [Filipe Carneiro](https://github.com/filipecarneiro), who spearheaded the landing page we used as a template for ours. The GitHub for the template can be found [here](https://github.com/filipecarneiro/hugo-bootstrap-theme).

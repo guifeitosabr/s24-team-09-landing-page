@@ -1,6 +1,6 @@
 ---
-title: "Bootstrap Components ✨"
-description: "Bootstrap is bundled with tens of components that can be reused to provide a good user experience and user interactions in a web page."
+title: "How Did You Build the Extension?"
+description: "The tools we used to build FocusTabs, and the rationale behind its backend development and frontend design (+ link do extension's GitHub)."
 draft: false
 tags: ["Featured"]
 images: ["bootstrap-v5-new-logo.png","hugo-bootstrap-banner.png"]

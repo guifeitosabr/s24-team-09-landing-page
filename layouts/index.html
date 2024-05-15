@@ -6,23 +6,43 @@
       <img class="d-block mx-auto mb-3" src="{{ `images/logo.svg` | relURL }}" width="150" height="150" alt="Bootstrap">
       <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1>
       <p class="lead mb-4">{{ .Site.Params.Description }}</p>
-      <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://github.com/filipecarneiro/hugo-bootstrap-theme" role="button">Get Started</a>
-      <p class="text-muted mb-0">Open-source MIT Licensed.</p>
+      <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://github.com/guifeitosabr/s24-team-09" role="button">Get Started</a>
+      <!-- <p class="text-muted mb-0">Open-source MIT Licensed.</p> -->
+      <h3 class="text-secondary text-center mt-5">Sea of Tabs?</h3>
+      <h2 class="text-secondary fw-bold text-center my-3">Find Your Flow.</h2>
     </div>
   </div>
 </section>
 
-<section class="section container my-3">
+<section class="section container mt-3 mb-5">
+  <div class="text-box">
+    <h2 class="text-secondary text-center">Whether you are a student juggling multiple assignments, a professional applying to new jobs,
+      or simply someone who struggles with multitasking (like the rest of us!), FocusTabs increases your productivity by only opening tabs
+      tailored to what you want to do.</h2>
+  </div>
+</section>
+
+<section class="section container my-5">
+  <h2 class="text-secondary fw-bold text-center my-5">Current Features</h2>
   {{ partial "features" . }}
 </section>
 
-<section class="section container my-3">
-  <h3 class="text-secondary text-center my-5">Latest Posts</h3>
+<!-- 
+<section class="section container my-5">
+  <h2 class="text-secondary text-center my-5">Features in Development</h2>
+  {{ partial "features-in-development" . }}
+</section>
+-->
+
+<!-- 
+<section class="section container my-5">
+  <h2 class="text-secondary text-center my-5">Latest Posts</h2>
   {{ partial "latest-posts" . }}
 </section>
+-->
 
-<section class="section container my-3">
-  <h3 class="text-secondary text-center my-5">Featured Pages</h3>
+<section class="section container my-5">
+  <h2 class="text-secondary fw-bold text-center my-5">FAQ Section</h2>
   {{ partial "featured-pages" . }}
 </section>
 

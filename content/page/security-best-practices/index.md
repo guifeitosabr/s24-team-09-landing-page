@@ -1,6 +1,6 @@
 ---
-title: "Security Best Practices 🔒"
-description: "Improve code health of your web page following these best practices. Prevent security vulnerabilities"
+title: "How Can I Use FocusTabs?"
+description: "Step-by-step about how to best use our extension to organize your Chrome tabs and increase your productivity online."
 draft: false
 tags: ["Featured"]
 keywords: ["security best practices","external links","does not use https","links to cross-origin destinations are unsafe","includes front-end JavaScript libraries with known security vulnerabilities","ensure CSP is effective against XSS attacks","Content Security Policy","csp"]
@@ -45,4 +45,3 @@ To detect vulnerable libraries check [snyk's Vulnerability DB](https://snyk.io/v
 ## Configure Content Security Policy (CSP)
 
 A Content Security Policy (CSP) helps to ensure any content loaded in the page is trusted by the site owner. CSPs mitigate cross-site scripting (XSS) attacks because they can block unsafe scripts injected by attackers. However, the CSP can easily be bypassed if it is not strict enough.
-

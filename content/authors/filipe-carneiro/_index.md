@@ -1,5 +1,5 @@
 ---
-title: Filipe Carneiro
+title: Team 09 - University of Pennsylvania's CIS3500
 ---
 
-Filipe Carneiro.
+Anirudh Bharadwaj, Eshan Singhal, Guilherme Feitosa, and Kofi Addae-Sakyi.

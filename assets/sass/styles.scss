@@ -1,61 +1,64 @@
 .home {
-    --bd-purple: #4c0bce;
-    --bd-violet: #712cf9;
-    --bd-accent: #ffe484;
-    --bd-violet-rgb: 112.520718,44.062154,249.437846;
-    --bd-accent-rgb: 255,228,132;
-    --bd-pink-rgb: 214,51,132;
+    // Define custom colors using CSS variables
+    --bd-navy: #0064D7; // Navy color
+    --bd-blue: #00abff; // Blue color
+    --bd-yellow: #fac832; // Yellow color
+    --bd-navy-rgb: 0,100,215; // RGB values for navy color
+    --bd-blue-rgb: 0,170,255; // RGB values for blue color
+    --bd-yellow-rgb: 255,200,50;  // RGB values for yellow color
 
     .bd-masthead {
-        padding: 3rem 0;
-        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
+        padding: 2rem 0; // Add padding to the masthead section
+        // Apply background gradient using linear and radial gradients
+        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.05),rgba(var(--bs-body-bg-rgb), 1) 75%),
+        radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 25%),
+        radial-gradient(ellipse at top right, rgba(var(--bd-yellow-rgb), 0.5), transparent 100%),
+        radial-gradient(ellipse at center right, rgba(var(--bd-blue-rgb), 0.5), transparent 25%),
+        radial-gradient(ellipse at center left, rgba(var(--bd-navy-rgb), 0.5), transparent 25%);
     }
 
     .btn-bd-primary {
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet);
-        --bs-btn-border-color: var(--bd-violet);
-        --bs-btn-border-radius: .5rem;
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
+        // Define button styles using CSS variables
+        --bs-btn-font-weight: 600; // Set the font weight of the button to 600 (bold)
+        --bs-btn-color: var(--bs-white); // Set the text color of the button to the value of the CSS variable --bs-white
+        --bs-btn-bg: var(--bd-blue); // Set the background color of the button to the value of the CSS variable --bd-blue
+        --bs-btn-border-color: var(--bd-blue); // Set the border color of the button to the value of the CSS variable --bd-blue
+        --bs-btn-border-radius: .5rem; // Set the border radius of the button to 0.5rem (rounded corners)
+        --bs-btn-hover-color: var(--bs-white); // Set the text color of the button on hover to the value of the CSS variable --bs-white
+        --bs-btn-hover-bg: #1c6dc9; // Set the background color of the button on hover to a specific color (#6528e0)
+        --bs-btn-hover-border-color: #1c6dc9; // Set the border color of the button on hover to a specific color (#6528e0)
+        --bs-btn-focus-shadow-rgb: var(--bd-blue-rgb); // Set the shadow color of the button when focused to the value of the CSS variable --bd-blue-rgb
+        --bs-btn-active-color: var(--bs-btn-hover-color); // Set the text color of the button when active to the value of the text color on hover
+        --bs-btn-active-bg: #5a23c8; // Set the background color of the button when active to a specific color (#5a23c8)
+        --bs-btn-active-border-color: #5a23c8; // Set the border color of the button when active to a specific color (#5a23c8)
     }
 }
 
 .navbar {
-    @extend .navbar-dark;
-
-    --bd-violet-rgb: 112.520718,44.062154,249.437846;
-    
-    padding: .75rem 0;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
+    @extend .navbar-dark; /* Extend styles from .navbar-dark class */
+    padding: .75rem 0; /* Add padding to the navbar */
+    background-color: var(--bd-blue); /* Set initial background color to blue */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25), inset 0 -1px 0 rgba(0,0,0,0.25);
 }
 
 .text-violet {
-    color: #6528e0;
+    color: #6528e0; // Set text color to violet
 }
 
 .list {
     .card {
-        transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out; // Add transition effect
 
         &:hover {
-            transform: scale(1.01);
+            transform: scale(1.05); // Scale card on hover
         }
     }
 }
 
 .navbar-brand {
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out; // Add transition effect
 
     &:hover {
-        transform: rotate(-2deg) scale(1.1);
+        transform: scale(1.1); // Rotate and scale on hover
     }
 }

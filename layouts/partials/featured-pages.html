@@ -1,9 +1,7 @@
 <div class="row row-cols-1 g-4">
-
     {{ range .Site.Taxonomies.tags.featured }}
         <div class="col">
-
-            <div class="card">
+            <div class="card text-box">
                 <div class="card-body">
                     <h4 class="card-title">
                         <a class="stretched-link text-primary text-decoration-none" href="{{ .Permalink }}">
@@ -24,7 +22,6 @@
                     </p>
                 </div>
             </div>
-    
         </div>
     {{ end }}
 </div>

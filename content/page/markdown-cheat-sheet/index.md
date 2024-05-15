@@ -1,216 +1,26 @@
 ---
-title: "Markdown Cheat Sheet Ⓜ️⬇️"
-description: "An overview of basic markdown syntax."
+title: "What is Your Mission Statement?"
+description: "The mission of FocusTabs, its target audience, selling points, and inspiration."
 draft: false
 tags: ["Featured"]
-images: ["markdown-guide-og.jpg"]
-keywords: ["markdown cheat sheet","markdown","cheat sheet", "markdown cheatsheet", "hugo markdown cheat sheet", "goldmark"]
-aliases:
-  - blog/my-third-blog-post
+keywords: ["problem & mission statement","target audience","selling points","references & inspiration"]
 ---
 
-# Markdown Cheat Sheet
+# What is Your Mission Statement?
 
-Hugo has excellent Markdown support out of the box. By default, Hugo uses the [Goldmark Markdown processor](https://github.com/yuin/goldmark/) which is fully CommonMark-compliant. See the [configuration instructions](https://gohugo.io/getting-started/configuration-markup/) to learn more about the extensions you can configure.
+When you are working online, especially when trying to multitask, it is extremely easy to get lost in a sea of 30-40 tabs that leads you floundering. Indeed, cluttered tabs not only reduce your productivity but can also leave you more stressed and frustrated, as you struggle to keep track of everything. FocusTabs was built to address this issue, assisting the user with keeping track of all of the tabs needed to achieve each of their goals, and hence improving their overall virtual experience.
 
-## Overview
+### Target Audience
 
-You can refer to the table below for an overview of basic markdown syntax:
+FocusTab's target audience is primarily high school and college students, who often have to manage multiple assignments for various classes. Nevertheless, this Chrome extension is aimed at whoever has to juggle different demands online, such as professionals with heavy workloads, individuals applying for new job opportunities, and more.
 
-| TASK           | MARKDOWN SYNTAX                  |
-| -------------- | -------------------------------- |
-| Heading 1      | `#`                              |
-| Heading 2      | `##`                             |
-| Heading 3      | `###`                            |
-| Italics        | `*italics*`                      |
-| Bold           | `**Bold**`                       |
-| Strike         | `~~strike~~`                     |
-| Blockquote     | `>`                              |
-| Links          | `[link name](https://link.com)`  |
-| Images         | `![Image name](image.png)`       |
-| Unordered list | `* List item`                    |
-| Ordered list   | `1. List item`                   |
-| Inline Code    | <code>\`insert code here\`<code> |
-{.table .table-sm .table-striped .table-hover}
+### Selling Points
 
----
+1. FocusTabs increases your productivity by only opening tabs tailored to what you want to do.
+2. FocusTabs enables you to seamlessly navigate between different tasks without you needing to open and close multiple tabs.
+3. FocusTabs ensures that your tabs are efficiently organized so that you always know where your work for a particular project can be found.
+4. FocusTabs suggests tab grouping and names to further optimize your workflow.
 
-## Headings
+## References & Inspiration
 
-```markdown
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-```
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
----
-
-## Lists
-
-```markdown
-* Unordered item
-* Unordered item
-* Unordered item
-
-1. Ordered item
-2. Ordered item
-3. Ordered item
-
-- [ ] Task item
-- [x] Checked Task item
-- [ ] Task item
-```
-
-* Unordered item
-* Unordered item
-* Unordered item
-
-1. Ordered item
-2. Ordered item
-3. Ordered item
-
-- [ ] Task item
-- [x] Checked Task item
-- [ ] Task item
-
----
-
-## Format
-
-```markdown
-**Bold**
-
-*Italic*
-
-<u>Underline</u>
-
-<sup>Superscript</sup>
-
-<sub>Subscript</sub>
-
-<mark>Highlight</mark>
-
-`Inline code`
-
-~~Strikethrough~~
-
-[Hyperlink](http://example.com)
-
-![Image](placeholder-50-09f-fff.png)
-{ .img-fluid }
-```
-
-**Bold**
-
-*Italic*
-
-<u>Underline</u>
-
-<sup>Superscript</sup>
-
-<sub>Subscript</sub>
-
-<mark>Highlight</mark>
-
-`Inline code`
-
-~~Strikethrough~~
-
-[Hyperlink](http://example.com)
-
-![Image](placeholder-50-09f-fff.png)
-{ .img-fluid }
-
----
-
-## Table
-
-```markdown
-| Header 1 | Header 2 |
-| -------- | -------- |
-| Cell 1   | Cell 2   |
-| Cell 3   | Cell 4   |
-```
-
-| Header 1 | Header 2 |
-| -------- | -------- |
-| Cell 1   | Cell 2   |
-| Cell 3   | Cell 4   |
-
----
-
-## Blockquote
-
-```markdown
-> Blockquote  
-> Second line
-> 
->  -- Author
-```
-
-> Blockquote  
-> Second line
-> 
->  -- Author
-
----
-
-## Code Block
-
-`````
-```go
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("hello world")
-}
-```
-`````
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("hello world")
-}
-```
-
----
-
-## HTML
-
-```markdown
-<div>
-    <p>Hello world</p>
-</div>
-```
-
-<div>
-    <p>Hello world</p>
-</div>
-
----
-
-## See also
-
-- [Hugo Markdown Reference](https://www.markdownguide.org/tools/hugo/)
-- [Bootstrap Typography](https://getbootstrap.com/docs/5.3/content/typography/)
+Our motivation to build FocusTabs came directly from our own experience in high school and in college, often becoming flustered with the amount of tabs open for various, unrelated projects, from lecture notes and homework to job applications and leisure, amongst others (many others).
