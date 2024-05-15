@@ -1,6 +1,7 @@
 ---
 title: "How Can I Use FocusTabs?"
 description: "Step-by-step about how to best use our extension to organize your Chrome tabs and increase your productivity online."
+url: "/page/how-can-i-use-focustabs/"
 draft: false
 tags: ["Featured"]
 keywords: ["security best practices","external links","does not use https","links to cross-origin destinations are unsafe","includes front-end JavaScript libraries with known security vulnerabilities","ensure CSP is effective against XSS attacks","Content Security Policy","csp"]

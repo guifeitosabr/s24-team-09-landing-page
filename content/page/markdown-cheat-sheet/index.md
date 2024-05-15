@@ -1,6 +1,7 @@
 ---
 title: "What is Your Mission Statement?"
 description: "The mission of FocusTabs, its target audience, selling points, and inspiration."
+url: "/page/what-is-your-mission-statement/"
 draft: false
 tags: ["Featured"]
 keywords: ["problem & mission statement","target audience","selling points","references & inspiration"]

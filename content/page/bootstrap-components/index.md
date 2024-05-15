@@ -1,6 +1,7 @@
 ---
 title: "How Did You Build the Extension?"
 description: "The tools we used to build FocusTabs, and the rationale behind its backend development and frontend design (+ link do extension's GitHub)."
+url: "/page/how-did-you-build-the-extension/"
 draft: false
 tags: ["Featured"]
 images: ["bootstrap-v5-new-logo.png","hugo-bootstrap-banner.png"]

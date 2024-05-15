@@ -1,24 +1,23 @@
-.home {
-    // Define custom colors using CSS variables
+:root {
     --bd-navy: #0064D7; // Navy color
     --bd-blue: #00abff; // Blue color
     --bd-yellow: #fac832; // Yellow color
     --bd-navy-rgb: 0,100,215; // RGB values for navy color
     --bd-blue-rgb: 0,170,255; // RGB values for blue color
-    --bd-yellow-rgb: 255,200,50;  // RGB values for yellow color
+    --bd-yellow-rgb: 255,200,50; // RGB values for yellow color
+}
 
+.home {
     .bd-masthead {
         padding: 2rem 0; // Add padding to the masthead section
-        // Apply background gradient using linear and radial gradients
-        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.05),rgba(var(--bs-body-bg-rgb), 1) 75%),
-        radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 25%),
-        radial-gradient(ellipse at top right, rgba(var(--bd-yellow-rgb), 0.5), transparent 100%),
-        radial-gradient(ellipse at center right, rgba(var(--bd-blue-rgb), 0.5), transparent 25%),
-        radial-gradient(ellipse at center left, rgba(var(--bd-navy-rgb), 0.5), transparent 25%);
+        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.05), rgba(var(--bs-body-bg-rgb), 1) 75%),
+            radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 25%),
+            radial-gradient(ellipse at top right, rgba(var(--bd-yellow-rgb), 0.5), transparent 100%),
+            radial-gradient(ellipse at center right, rgba(var(--bd-blue-rgb), 0.5), transparent 25%),
+            radial-gradient(ellipse at center left, rgba(var(--bd-navy-rgb), 0.5), transparent 25%);
     }
 
     .btn-bd-primary {
-        // Define button styles using CSS variables
         --bs-btn-font-weight: 600; // Set the font weight of the button to 600 (bold)
         --bs-btn-color: var(--bs-white); // Set the text color of the button to the value of the CSS variable --bs-white
         --bs-btn-bg: var(--bd-blue); // Set the background color of the button to the value of the CSS variable --bd-blue

@@ -3,7 +3,7 @@ title = "FocusTabs"
 author = "Guilherme Feitosa"
 copyright = "Website built by Guilherme Feitosa."
 
-relativeURLs = true
+# relativeURLs = false
 
 # baseURL = 'https://filipecarneiro.github.io/hugo-bootstrap-theme/'
 # title = "FocusTabs"

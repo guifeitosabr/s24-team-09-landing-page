@@ -1,12 +1,13 @@
 ---
-title: "Who Built this Extension?"
+title: "Who Built the Extension?"
 description: "The team behind FocusTabs and acknowledgements."
+url: "/page/who-built-the-extension/"
 draft: false
 tags: ["Featured"]
 keywords: ["university of pennsylvania","anirudh bharadwaj","eshan singhal","guilherme feitosa","kofi addae-sakyi","jérémie o. lumbroso","filipe carneiro"]
 ---
 
-# Who Built this Extension?
+# Who Built the Extension?
 
 FocusTabs was built as part of the curriculum for University of Pennsylvania's CIS3500 class ("Software Design & Engineering"), instructed by Professor [Jérémie O. Lumbroso](https://github.com/jlumbroso), during the 2024 spring semester.
 
