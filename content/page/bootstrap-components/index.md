@@ -1,10 +1,10 @@
 ---
-title: "How Did You Build the Extension?"
-description: "The tools we used to build FocusTabs, and the rationale behind its backend development and frontend design (+ link do extension's GitHub)."
+title: "How Was The Process Of Building the Extension?"
+description: "Development process, decisions made, mistakes encountered, and most importantly, the lessons learned while building FocusTabs."
 url: "/page/how-did-you-build-the-extension/"
 draft: false
 tags: ["Featured"]
-keywords: ["decisions and mistakes","api integration","api key","gpt"]
+keywords: ["decisions and mistakes","api integration","api key","gpt","feature overload","ui/ux","lessons learned"]
 ---
 
 # How Did You Build the Extension?
@@ -39,11 +39,11 @@ Our initial feature set was ambitious, aiming to cater to a wide array of user s
 
 Throughout the development process, we encountered setbacks, bugs, and unforeseen challenges. However, instead of viewing these as failures, we embraced them as opportunities for learning and growth. **Each bug fixed, and each challenge overcome, contributed to our collective knowledge, and strengthened our resolve to deliver a polished product.** Here’s a brief overview of some of the more general issues we faced:
 
-The limitations of a Chrome extension were initially a large issue. For the background.js script, we had originally referenced some other scripts that utilized 3rd party libraries (OpenAI, Cheerio, Axios, etc.) but we realized that we would not be able to use these as imports in our extension, which necessitated changing a lot of our initial ideas. For example, when figuring out what information for each tab to provide to the OpenAI API as context for determining what tab groups to create, we initially thought to provide content from the tabs themselves, though we later had to reduce this to just information from the tab’s title, as this was all the information we could access without requesting Axios.
+**The limitations of a Chrome extension were initially a large issue.** For the background.js script, we had originally referenced some other scripts that utilized 3rd party libraries (OpenAI, Cheerio, Axios, etc.) but we realized that we would not be able to use these as imports in our extension, which necessitated changing a lot of our initial ideas. For example, when figuring out what information for each tab to provide to the OpenAI API as context for determining what tab groups to create, we initially thought to provide content from the tabs themselves, though we later had to reduce this to just information from the tab’s title, as this was all the information we could access without requesting Axios.
 
-We also ran into many issues regarding the formatting of function output. Since we had many functions that relied on each other, including many that were asynchronous, much of our debugging was realizing that we had to return a subset of the original output when passing it to another function or resolve the output so that we weren’t passing in a Promise as the input. However, as we became more familiar with the syntax, we became far more comfortable with avoiding these types of issues.
+**We also ran into many issues regarding the formatting of function output.** Since we had many functions that relied on each other, including many that were asynchronous, much of our debugging was realizing that we had to return a subset of the original output when passing it to another function or resolve the output so that we weren’t passing in a Promise as the input. However, as we became more familiar with the syntax, we became far more comfortable with avoiding these types of issues.
 
-Finally, an issue we faced was understanding how to interface with the extension when downloaded. We primarily relied on print statements to debug, and thus needed to figure out how to parse the Chrome development tools to figure out where these were displayed (in particular, figuring out where our frontend typescript file’s print statements were sent to required quite a bit of effort before we landed on right-clicking on the extension pop-up).
+Finally, an issue we faced was **understanding how to interface with the extension when downloaded.** We primarily relied on print statements to debug, and thus needed to figure out how to parse the Chrome development tools to figure out where these were displayed (in particular, figuring out where our frontend typescript file’s print statements were sent to required quite a bit of effort before we landed on right-clicking on the extension pop-up).
 
 ## Conclusion
 
